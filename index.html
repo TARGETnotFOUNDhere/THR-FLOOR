@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>THE FLOOR — Detailed Game Roadmap</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-grid"></div>
+
+<header class="hero">
+  <div class="hero-left">
+    <div class="eyebrow">BBA GAME EXPERIENCE • 200–300 PLAYERS</div>
+    <div class="topline">ONE FLOOR. 6 ZONES. <b>2 DAYS. 1 WINNER.</b></div>
+    <h1>THE<br><span>FLOOR</span></h1>
+    <p class="hero-sub">A STORY-DRIVEN COMPETITIVE GAME WHERE TEAMS CAPTURE, DEFEND AND STEAL THE FLOOR.</p>
+    <div class="hero-buttons">
+      <button onclick="go('games')">SEE ALL GAMES ↓</button>
+      <button class="dark" onclick="go('flow')">SEE THE STORY →</button>
+    </div>
+  </div>
+
+  <div class="how-box">
+    <h2>HOW IT WORKS</h2>
+    <div class="how-line">
+      <div><b>01</b><strong>👥</strong><span>TEAMS<br>ENTER</span></div>
+      <i>→</i>
+      <div><b>02</b><strong>🎮</strong><span>PLAY<br>ZONES</span></div>
+      <i>→</i>
+      <div><b>03</b><strong>🚩</strong><span>CAPTURE<br>ZONES</span></div>
+      <i>→</i>
+      <div><b>04</b><strong>🛡</strong><span>DEFEND /<br>CHALLENGE</span></div>
+      <i>→</i>
+      <div><b>05</b><strong>♛</strong><span>FINAL<br>FLOOR</span></div>
+    </div>
+    <div class="how-note">Every zone gives the winning team an advantage going into Day 2.</div>
+  </div>
+</header>
+
+<section class="zone-strip">
+  <button class="mini z1" onclick="showZone(0)"><b>01</b><span>⚡</span><strong>THE SPEED</strong><small>REACTION</small></button>
+  <button class="mini z2" onclick="showZone(1)"><b>02</b><span>🧠</span><strong>THE MIND</strong><small>LOGIC</small></button>
+  <button class="mini z3" onclick="showZone(2)"><b>03</b><span>🎯</span><strong>THE AIM</strong><small>PRECISION</small></button>
+  <button class="mini z4" onclick="showZone(3)"><b>04</b><span>💥</span><strong>THE CHAOS</strong><small>COMMUNICATION</small></button>
+  <button class="mini z5" onclick="showZone(4)"><b>05</b><span>✦</span><strong>THE CREATIVE</strong><small>CHARISMA</small></button>
+  <button class="mini z6" onclick="showZone(5)"><b>06</b><span>⚠</span><strong>THE GLITCH</strong><small>TWIST</small></button>
+</section>
+
+<section class="section" id="games">
+  <div class="title-row">
+    <div><span class="label">01 / DAY 1</span><h2>THE 6 ZONES <em>& GAMES</em></h2></div>
+    <p>Click any zone for complete rules, setup, scoring and win condition.</p>
+  </div>
+  <div class="games-grid" id="gamesGrid"></div>
+</section>
+
+<section class="story-section" id="flow">
+  <div class="label">02 / THE STORY</div>
+  <div class="story-grid">
+    <div><h2>THE FLOOR<br><em>CHANGES.</em></h2></div>
+    <div>
+      <div class="story-step"><b>01</b><div><h3>THE ENTRY</h3><p>Players are divided into teams. Each team enters the Floor with the same starting position.</p></div></div>
+      <div class="story-step"><b>02</b><div><h3>THE CAPTURE</h3><p>Teams move through Zones 1–5. Win a zone challenge and your team becomes its owner.</p></div></div>
+      <div class="story-step"><b>03</b><div><h3>THE GLITCH</h3><p>Zone 6 breaks the normal rules. Selected players from the remaining pool are randomly combined into a new team.</p></div></div>
+      <div class="story-step"><b>04</b><div><h3>THE TAKEOVER</h3><p>Day 2 begins with six zone-owning teams. Teams can now challenge other teams and fight to take their territory.</p></div></div>
+      <div class="story-step"><b>05</b><div><h3>THE FINAL FLOOR</h3><p>The strongest teams reach the final stage. One final challenge decides the winner.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="day-section">
+  <div class="day-head"><div><span class="label">03 / SCHEDULE</span><h2>DAY 1 — <em>THE DISCOVERY</em></h2></div><span class="day-tag red">CAPTURE</span></div>
+  <div class="timeline">
+    <div><b>10:00</b><strong>OPENING</strong><span>Rules + teams + story</span></div>
+    <div><b>10:15</b><strong>⚡ SPEED</strong><span>Card challenge</span></div>
+    <div><b>11:00</b><strong>🧠 MIND</strong><span>Puzzles + riddles</span></div>
+    <div><b>11:45</b><strong>🎯 AIM</strong><span>Blindfold cups</span></div>
+    <div><b>12:30</b><strong>BREAK</strong><span>Reset</span></div>
+    <div><b>01:15</b><strong>💥 CHAOS</strong><span>Whisper challenge</span></div>
+    <div><b>02:15</b><strong>✦ CREATIVE</strong><span>Product pitch</span></div>
+    <div><b>04:15</b><strong>⚠ GLITCH</strong><span>Final twist</span></div>
+  </div>
+  <div class="result-banner">DAY 1 RESULT → <b>6 TEAMS / 6 ZONES / 6 OWNERS</b></div>
+</section>
+
+<section class="day-section blue">
+  <div class="day-head"><div><span class="label">04 / SCHEDULE</span><h2>DAY 2 — <em>THE TAKEOVER</em></h2></div><span class="day-tag blue-tag">BATTLE</span></div>
+  <div class="timeline">
+    <div><b>10:00</b><strong>RECAP</strong><span>Story + standings</span></div>
+    <div><b>10:20</b><strong>⚔ BATTLE</strong><span>Challenge begins</span></div>
+    <div><b>11:30</b><strong>↔ SWITCH</strong><span>New matchups</span></div>
+    <div><b>01:15</b><strong>🛡 CONTROL</strong><span>Defend your zone</span></div>
+    <div><b>02:30</b><strong>SEMIFINAL</strong><span>Top teams</span></div>
+    <div><b>03:30</b><strong>♛ FINAL FLOOR</strong><span>Last challenge</span></div>
+    <div><b>04:15</b><strong>🏆 WINNER</strong><span>Crown the champion</span></div>
+  </div>
+  <div class="result-banner">DAY 2 RESULT → <b>CONTROL THE MOST TERRITORY TO REACH THE FINAL</b></div>
+</section>
+
+<section class="dashboard">
+  <div class="panel">
+    <div class="label">05 / LIVE</div><h2>FLOOR <em>MAP</em></h2>
+    <p>Current zone ownership. Use this as the live event screen.</p>
+    <div class="floor-map" id="map"></div>
+  </div>
+  <div class="panel">
+    <div class="label">06 / LIVE</div><h2>LEADER<em>BOARD</em></h2>
+    <p>Territory decides the ranking.</p>
+    <div id="leaderboard"></div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="crown">♛</div>
+  <span>THE ULTIMATE CHALLENGE</span>
+  <h2>THE FINAL <em>FLOOR</em></h2>
+  <p>Only the strongest teams survive the takeover.<br>One last challenge. One winner. <b>Own the Floor.</b></p>
+</section>
+
+<footer><b>THE FLOOR</b><span>ONE FLOOR • SIX ZONES • TWO DAYS • ONE WINNER</span></footer>
+
+<div class="modal" id="modal">
+  <div class="modal-card">
+    <button class="close" onclick="closeModal()">×</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
